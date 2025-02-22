@@ -4,9 +4,9 @@
 
 This project implements the Lucas-Lehmer primality test to verify whether a given Mersenne number is prime. A Mersenne number is defined as:
 
-\[
+$$
 M_p = 2^p - 1
-\]
+$$
 
 where *p* is a prime number. The program takes an index  as input, checks if  is an odd prime, and, if so, applies the Lucas-Lehmer test to determine if  is prime.
 
