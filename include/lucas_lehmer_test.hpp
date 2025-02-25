@@ -3,6 +3,6 @@
 
 #include <gmpxx.h>
 
-bool lucas_lehmer_test(const mpz_class &M, const long long& n);
+bool lucas_lehmer_test(const mpz_class &M, const unsigned long long& p);
 
 #endif

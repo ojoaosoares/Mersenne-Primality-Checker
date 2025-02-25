@@ -13,6 +13,7 @@ where *p* is a prime number. The program takes an index  as input, checks if  is
 ## Features
 
 - **Lucas-Lehmer Test**: Efficiently verifies the primality of Mersenne numbers.
+- **Fermat Method**: Verifies the primality of Mersenne numbers and return the smallest prime factor.
 - **Index Validation**: Ensures that the given index  is an odd prime before applying the test.
 - **Optional Output**: Supports an additional flag to print the Mersenne number. However, when *p* gets bigger the respective mersenne number becomes unreadble because of its size.
 
@@ -50,13 +51,21 @@ make clean
 
 After compiling, run the program using:
 ```bash
-./bin/mersenne_primality_test [N] [-n]
+./bin/mersenne_primality_test -i [N] -m [METHOD] -n
 ```
 
-where [N] is the index of the Mersenne number to be tested, and the optional -n flag prints the corresponding Mersenne number.
+where
+
+- **-i [N]**: Index of the Mersenne number to be tested
+- **-m [METHOD]**: Method to use for primality testing:
+  - `LL` for Lucas-Lehmer method
+  - `F` for Fermat method  
+  (Lucas-Lehmer method is the default).
+- **-n**: Optional flag to print the corresponding Mersenne number.
 
 ## Program Output
 
 - If *p* is not an odd prime, the program will output an error message
-- If *p* is an odd prime, it will run the Lucas-Lehmer test and output whether  is prime.
+- If *p* is an odd prime, it will run the Lucas-Lehmer test and output whether \( M_p\) is prime.
 - If the *-n* flag is provided, the program will also print the value of \( M_p\).
+- If the method being used is the Fermat method and \( M_p\) is not prime, the smallest prime factor of it will be printed
