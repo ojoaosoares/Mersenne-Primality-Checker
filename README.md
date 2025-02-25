@@ -66,6 +66,6 @@ where
 ## Program Output
 
 - If *p* is not an odd prime, the program will output an error message
-- If *p* is an odd prime, it will run the Lucas-Lehmer test and output whether \( M_p\) is prime.
-- If the *-n* flag is provided, the program will also print the value of \( M_p\).
-- If the method being used is the Fermat method and \( M_p\) is not prime, the smallest prime factor of it will be printed
+- If *p* is an odd prime, it will run the Lucas-Lehmer test and output whether M_p is prime.
+- If the *-n* flag is provided, the program will also print the value of M_p.
+- If the method being used is the Fermat method and M_p is not prime, the smallest prime factor of it will be printed
