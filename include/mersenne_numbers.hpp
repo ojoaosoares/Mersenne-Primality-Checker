@@ -3,6 +3,6 @@
 
 #include <gmpxx.h>
 
-mpz_class n_mersenne_number(const long long& n);
+mpz_class n_mersenne_number(const unsigned long long& n);
 
 #endif
